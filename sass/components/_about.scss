@@ -1,0 +1,74 @@
+.about {
+    @media screen and (min-width: 480px) {
+            display: none;
+        }
+                @media screen and (min-width: 1200px) {
+                    width: 1200px;
+                    display: block;
+margin: auto;
+                }
+}
+
+.skills-container {
+    padding-bottom: 94px;
+}
+
+.about__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+    color: #212121;
+}
+
+.about__gallery{
+    display: flex;
+    gap: 30px;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            padding: 0 15px;
+    
+        }
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.about__box {
+    position: relative;
+    display: block;
+}
+
+.about__text {
+    position: absolute;
+    bottom: 0;
+
+    color: white;
+    font-weight: 600;
+    line-height: 1.6;
+    background-color: #2f303aac;
+    width: 100%;
+    padding: 27px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.team {
+    background-color: #f5f4fa;
+    padding: 94px 0;
+    @media screen and (min-width: 768px) {
+        padding: 60 0 0 0;
+        
+    }
+}

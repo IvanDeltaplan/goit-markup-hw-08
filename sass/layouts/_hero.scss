@@ -1,0 +1,41 @@
+.hero-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    color: #212121;
+}
+
+.hero-box {
+    padding: 30px;
+}
+
+.hero-about {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.menu__link{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    position: relative;
+    
+    .menu &:hover,
+        .menu &:focus {
+            color: var(--accent-color);
+        }
+}

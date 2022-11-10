@@ -1,0 +1,191 @@
+
+
+
+.button-position {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    // @media screen and (min-width: 480px) {
+    //     width: 326px;
+        
+    // }
+    @media screen and (min-width:480px) {
+        width: 326px;
+        margin: 15px;
+        
+        justify-content: left; 
+        flex-wrap: wrap;       
+    }
+        @media screen and (min-width:768px) {
+            width: 738px;
+            margin: 15px;
+    
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+                @media screen and (min-width:1200px) {
+                    width: 1170px;
+                    display: flex;
+                        justify-content: center;
+                        margin-bottom: 50px;
+                }
+}
+
+.header-btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 6px 22px;
+    border: 0;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+                background-color: var(--accent-color);
+                color: var(--main-btn-color);
+                box-shadow: var(--card-shadow);
+            }
+
+            @media screen and (min-width: 480px) {
+            font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                /* identical to box height, or 162% */
+            
+                text-align: center;
+                letter-spacing: 0.03em;
+            
+                color: #212121;
+            }
+        }
+
+
+.modal-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #909090;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    @extend %aligner-centr;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    
+        &:hover {
+        fill: var(--accent-color); 
+        // color: #188ce8;
+    }
+
+}
+
+
+
+.button-email {
+    /* margin-top: 40px; */
+    
+    justify-content: center;
+    @extend %aligner-centr;
+    width: 200px;
+    
+    background-color: #2196f3;
+    font-family: inherit;
+
+    
+    font-size: 16px;
+    line-height: 1.8;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    height: 50px;
+    font-weight: 700;
+    /* padding: 10px 32px; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+        background-color: #188ce8;
+        color: #ffffff;
+    }
+
+        @media screen and (min-width:768px) {
+            display: flex;
+           
+            margin-top: 20px;
+            width: 200px;
+            justify-content: center;
+    
+        }
+        
+        @media screen and (min-width:1200px) {
+        width: 200px;
+        
+    }
+}
+
+
+
+.button-email-icon {
+    margin-left: 12px;
+    @media screen and (min-width: 480px) {
+    
+            width: 24px;
+            height: 24px;
+    
+        }
+}
+
+
+
+.filter-text {
+    cursor: pointer;
+
+    @extend %aligner-centr;
+    justify-content: center;
+    
+    width: 200px;
+    height: 50px;
+    background-color: #2196f3;
+    font-family: inherit;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    /* padding: 10px 32px; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: #188ce8;
+        color: #ffffff;
+    }
+
+}
+
+
+// .filter-btn:checked+.filter-text {
+//     background-color: #2196f3;
+//     color: #ffffff;
+// }

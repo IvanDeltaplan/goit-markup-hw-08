@@ -1,0 +1,154 @@
+.advantage__list {
+   
+    @media screen and (min-width: 480px) {
+        display: flex;
+            flex-direction: column;
+justify-content: center;
+            width: 450px;
+            margin: auto;
+        }
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    gap: 20px;
+                }
+
+                                @media screen and (min-width: 1200px) {
+                                    padding: 0;
+                                    margin: 0%;
+                                    
+                                    width: 100%;
+                                    display: flex;
+                                        gap: 30px;
+                                        justify-content: center;
+                                       
+                                       
+                                }
+}
+.perevaga-container {
+    /* margin-top: 94px; */
+    padding-top: 94px;
+}
+.advantage__title{
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media screen and (min-width: 480px) {
+        display: flex;
+            justify-content: center;
+        }
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    justify-content: left;
+                    width: 354px;
+                    padding-top: 10px;
+                    font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0.03em;
+                        text-transform: uppercase;
+                    
+                        color: #212121;
+                }
+
+                                @media screen and (min-width: 1200px) {
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 100%;
+                                }
+                
+
+}
+
+.advantage__text {
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+            margin-bottom: 30px;
+            
+        }
+                @media screen and (min-width: 768px) {
+                    // width: 768px;
+                    margin-bottom: 30px;
+                    width: 354px;
+                    font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        /* or 171% */
+                    
+                        letter-spacing: 0.03em;
+                    
+                        color: #757575;
+                }
+                                @media screen and (min-width: 1200px) {
+                                    // width: 768px;
+                                    margin-bottom: 30px;
+                                    width: 270px;
+                                    font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        /* or 171% */
+                                    
+                                        letter-spacing: 0.03em;
+                                        width: 270px;
+                                    
+                                        color: #757575;
+                                }
+}
+// .perevaga-list {
+//     display: flex;
+//     gap: 30px;
+// }
+
+.advantage__icon{
+    width: 70px;
+    height: 70px;
+}
+.advantage__box{
+    height: 120px;
+
+    background-color: #f5f4fa;
+    @extend %aligner-centr;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+            width: 100%;
+            padding: 0;
+            // margin-bottom: 30px;
+    
+        }
+                @media screen and (min-width: 768px) {
+                    width: 354px;
+                    margin: 0;
+                    padding: 0;
+        
+                }
+                                @media screen and (min-width: 1200px) {
+                                    width: 270px;
+                                    margin-bottom: 30px;;
+                
+                                }
+}
+.advantage {
+    @media screen and (min-width: 1200px) {
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+}
