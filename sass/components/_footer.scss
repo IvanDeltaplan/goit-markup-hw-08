@@ -114,8 +114,9 @@
                  @media screen and (min-width: 1200px) {
                    
 
+                        margin-top: 0;
 
-                     
+                     margin-right: 15px;
         
                  }
 }
@@ -123,8 +124,18 @@
 
     
     .adress-box {
-display: flex;
-flex-direction: column;
+        @media screen and (min-width: 480px) {
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                }
+
+
 
     }
     
@@ -151,6 +162,7 @@ font-style: normal;
                     align-items: center;
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
                     gap: 8px;
         
                 }
@@ -211,15 +223,15 @@ font-style: normal;
                     
                     
                     display: flex;
-                        justify-content: center;
+                        // justify-content: center;
                         align-items: center;
                         gap: 12px;
                     }
         
                 
                                 @media screen and (min-width: 1200px) {
-                                
-                                    align-items: flex-start;
+                                flex-direction:  row;
+                                    justify-content: flex-end;
                                 }
                             }
 

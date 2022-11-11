@@ -12,13 +12,19 @@
     display: flex;
     color: #2196f3;
     
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
+        margin-left: 30px;
+        align-items: center;
+
+    }
+    @media screen and (min-width: 480px) {
         margin-left: 30px;
         align-items: center;
 
     }
             @media screen and (min-width: 1200px ){
-                 margin-left: 100px;
+                //  margin-left: 100px;
+                margin: auto;
             }
     
 

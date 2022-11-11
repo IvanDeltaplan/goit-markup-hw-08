@@ -61,16 +61,6 @@ li {
   align-items: center;
 }
 
-@media screen and (max-width: 479px) {
-  .headercontainer {
-    display: flex;
-    gap: 190px;
-    height: 60px;
-    position: relative;
-    border-bottom: 0px;
-    border-bottom: 1px solid #ececec;
-  }
-}
 @media screen and (min-width: 480px) {
   .headercontainer {
     display: flex;
@@ -93,6 +83,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .headercontainer {
+    width: 1200px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -102,11 +93,6 @@ li {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .navigation {
-    display: none;
-  }
-}
 @media screen and (min-width: 480px) {
   .navigation {
     display: none;
@@ -199,14 +185,6 @@ li {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .connect {
-    display: flex;
-    margin-left: auto;
-    flex-direction: row;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .connect__adress {
     display: flex;
@@ -248,6 +226,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .connect__email {
+    display: flex;
     justify-content: flex-end;
   }
   .connect__email:hover, .connect__email:focus {
@@ -260,11 +239,6 @@ li {
   transition: color 300ms linear;
 }
 
-@media screen and (max-width: 479px) {
-  .connect__box {
-    display: none;
-  }
-}
 @media screen and (min-width: 480px) {
   .connect__box {
     font-weight: 500;
@@ -399,7 +373,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -409,14 +383,6 @@ li {
   padding: 0;
   border: none;
   background-color: transparent;
-}
-@media screen and (max-width: 479px) {
-  .menu-button {
-    align-items: center;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-  }
 }
 @media screen and (min-width: 480px) {
   .menu-button {
@@ -670,7 +636,6 @@ body {
 @media screen and (min-width: 1200px) {
   .button-email {
     width: 200px;
-    margin: auto;
   }
 }
 
@@ -726,11 +691,11 @@ section {
     padding-bottom: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: px) {
   section {
     width: 100%;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 }
 
@@ -974,7 +939,6 @@ section {
     background-size: cover;
     width: 100%;
     margin: 0;
-    padding-top: 118px;
   }
 }
 
@@ -1012,24 +976,12 @@ section {
   display: flex;
   color: #2196f3;
 }
-@media screen and (max-width: 479px) {
-  .logo {
-    margin-left: 30px;
-    align-items: center;
-  }
-}
 @media screen and (min-width: 480px) {
   .logo {
     margin-left: 30px;
     align-items: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin: auto;
-  }
-}
-
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1117,7 +1069,7 @@ section {
 @media screen and (min-width: 768px) {
   .advantage__title {
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     width: 354px;
     padding-top: 10px;
     font-family: "Roboto";
@@ -1133,7 +1085,7 @@ section {
 @media screen and (min-width: 1200px) {
   .advantage__title {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
   }
 }
@@ -1383,26 +1335,9 @@ section {
     margin: auto;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-subscribe {
-    margin-top: 0;
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .adress-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .adress-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.adress-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .adress-links-list {
@@ -1427,7 +1362,6 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
   }
 }
@@ -1499,14 +1433,14 @@ section {
 @media screen and (min-width: 768px) {
   .subscribe-button {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-button {
-    flex-direction: row;
-    justify-content: flex-end;
+    align-items: flex-start;
   }
 }
 
@@ -1600,10 +1534,11 @@ section {
 
 .team {
   background-color: #f5f4fa;
+  padding: 94px 0;
 }
 @media screen and (min-width: 768px) {
   .team {
-    padding: 60px 0;
+    padding: 60 0 0 0;
   }
 }
 
@@ -1868,28 +1803,19 @@ section {
   gap: 25px;
   color: #afb1b8;
 }
-@media screen and (max-width: 479px) {
-  .logo-clients-list {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0%;
-    width: 100%;
-  }
-}
 @media screen and (min-width: 480px) {
   .logo-clients-list {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0%;
-    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo-clients-list {
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
+    padding: 0 15px;
   }
 }
 
