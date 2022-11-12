@@ -64,20 +64,25 @@ li {
 @media screen and (max-width: 479px) {
   .headercontainer {
     display: flex;
-    gap: 190px;
+    width: 100%;
+    justify-content: center;
     height: 60px;
     position: relative;
-    border-bottom: 0px;
-    border-bottom: 1px solid #ececec;
+    border-bottom: none;
+    margin: auto;
+    border: none;
   }
 }
 @media screen and (min-width: 480px) {
   .headercontainer {
     display: flex;
     gap: 190px;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
     height: 60px;
     position: relative;
-    border-bottom: 0px;
+    border: none;
     border-bottom: 1px solid #ececec;
   }
 }
@@ -99,6 +104,7 @@ li {
     border-bottom: 1px solid #ececec;
     gap: unset;
     margin: 0;
+    margin: auto;
   }
 }
 
@@ -273,6 +279,7 @@ li {
     /* identical to box height */
     letter-spacing: 0.02em;
     color: #2196F3;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -342,6 +349,11 @@ li {
   display: block;
   margin: 0%;
 }
+@media screen and (min-width: 480px) {
+  .tel-box {
+    margin-top: 20px;
+  }
+}
 
 .hero-name {
   font-weight: 500;
@@ -386,9 +398,15 @@ li {
   width: 100%;
 }
 
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100%;
     margin: auto;
   }
 }
@@ -404,7 +422,6 @@ li {
 }
 
 .menu-button {
-  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -412,10 +429,7 @@ li {
 }
 @media screen and (max-width: 479px) {
   .menu-button {
-    align-items: center;
     margin: auto;
-    display: flex;
-    justify-content: flex-end;
   }
 }
 @media screen and (min-width: 480px) {
@@ -455,12 +469,21 @@ li {
   text-align: center;
   font-size: 20px;
   height: 796px;
-  width: 480px;
+  width: 100%;
 }
 .content-menu.is-open {
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
+  .content-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
   .content-menu {
     display: none;
     position: absolute;
@@ -472,8 +495,10 @@ li {
 @media screen and (min-width: 767px) {
   .content-menu {
     display: none;
-    justify-content: space-between;
-    flex-grow: 1;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -483,6 +508,8 @@ li {
   text-align: left;
   margin-top: 30px;
   gap: 30px;
+  border: none;
+  width: 100%;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -512,9 +539,13 @@ li {
 
 .soc-links-mob {
   display: flex;
-  gap: 10px;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   padding-left: 40px;
+  gap: 10px;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .soc-links-mob-style {
@@ -582,6 +613,7 @@ body {
   .button-position {
     width: 1170px;
     display: flex;
+    margin: auto;
     justify-content: center;
     margin-bottom: 50px;
   }
@@ -659,6 +691,22 @@ body {
   background-color: #188ce8;
   color: #ffffff;
 }
+@media screen and (max-width: 480px) {
+  .button-email {
+    display: flex;
+    margin-top: 20px;
+    width: 200px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .button-email {
+    display: flex;
+    margin-top: 20px;
+    width: 200px;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .button-email {
     display: flex;
@@ -711,6 +759,13 @@ body {
 section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 479px) {
+  section {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 480px) {
   section {
@@ -872,6 +927,13 @@ section {
   overflow: hidden;
   background-color: #ffffff;
 }
+@media screen and (max-width: 480px) {
+  .card-team {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .card-team {
     width: 450px;
@@ -902,6 +964,12 @@ section {
   max-width: 650px;
   /* height: 120px; */
   display: block;
+}
+@media screen and (max-width: 479px) {
+  .slogan__container {
+    width: 100%;
+    padding: 0 60px;
+  }
 }
 @media screen and (min-width: 480px) {
   .slogan__container {
@@ -953,7 +1021,6 @@ section {
 
 .slogan {
   background-color: #2f303a;
-  padding: 200px 0;
   display: flex;
   text-align: center;
   align-items: center;
@@ -961,11 +1028,20 @@ section {
   background-image: linear-gradient(rgba(25, 28, 38, 0.4), rgba(25, 28, 38, 0.4)), url("../images/img_head.png");
   background-size: cover;
 }
+@media screen and (max-width: 479px) {
+  .slogan {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.4), rgba(25, 28, 38, 0.4)), url("../images/img_head_mobile.png");
+    width: 100%;
+    margin: 0;
+    padding: 118px 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .slogan {
     background-image: linear-gradient(rgba(25, 28, 38, 0.4), rgba(25, 28, 38, 0.4)), url("../images/img_head_mobile.png");
     width: 100%;
     margin: 0;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -974,7 +1050,16 @@ section {
     background-size: cover;
     width: 100%;
     margin: 0;
-    padding-top: 118px;
+    padding: 118px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.4), rgba(25, 28, 38, 0.4)), url("../images/img_head_tablet.png");
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 200px 0;
   }
 }
 
@@ -1014,7 +1099,7 @@ section {
 }
 @media screen and (max-width: 479px) {
   .logo {
-    margin-left: 30px;
+    margin: auto;
     align-items: center;
   }
 }
@@ -1042,6 +1127,11 @@ section {
   display: flex;
   color: #2196f3;
 }
+@media screen and (max-width: 480px) {
+  .logo-footer {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 480px) {
   .logo-footer {
     justify-content: center;
@@ -1065,12 +1155,21 @@ section {
   color: black;
 }
 
+@media screen and (max-width: 479px) {
+  .advantage__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 25px);
+    margin: auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .advantage__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
+    width: calc(100% - 25px);
     margin: auto;
   }
 }
@@ -1138,6 +1237,12 @@ section {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .advantage__text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .advantage__text {
     width: 450px;
@@ -1160,7 +1265,6 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .advantage__text {
-    margin-bottom: 30px;
     width: 270px;
     font-weight: 400;
     font-size: 14px;
@@ -1182,6 +1286,12 @@ section {
   background-color: #f5f4fa;
   justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 479px) {
+  .advantage__box {
+    width: 100%;
+    padding: 0;
+  }
 }
 @media screen and (min-width: 480px) {
   .advantage__box {
@@ -1369,6 +1479,7 @@ section {
 
 .footer-links {
   padding-top: 12px;
+  margin-bottom: 20px;
 }
 
 .footer-form {
@@ -1378,9 +1489,16 @@ section {
 .footer-subscribe {
   padding-top: 12px;
 }
+@media screen and (max-width: 480px) {
+  .footer-subscribe {
+    margin: auto;
+    padding: 0 15px;
+  }
+}
 @media screen and (min-width: 480px) {
   .footer-subscribe {
     margin: auto;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1434,7 +1552,6 @@ section {
 
 .email-box {
   margin: 0;
-  padding: 0;
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -1442,7 +1559,6 @@ section {
   border: solid 1px #757575;
   background-color: #2f303a;
   box-sizing: border-box;
-  padding: 5px;
 }
 .email-box::-moz-placeholder {
   letter-spacing: 0.03em;
@@ -1451,7 +1567,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 0;
+  padding: 5px;
 }
 .email-box:-ms-input-placeholder {
   letter-spacing: 0.03em;
@@ -1460,7 +1576,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 0;
+  padding: 5px;
 }
 .email-box::placeholder {
   letter-spacing: 0.03em;
@@ -1469,11 +1585,17 @@ section {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 0;
+  padding: 5px;
+}
+@media screen and (max-width: 479px) {
+  .email-box {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 480px) {
   .email-box {
-    width: 450px;
+    width: 100%;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1487,13 +1609,20 @@ section {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .subscribe-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 480px) {
   .subscribe-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1552,12 +1681,17 @@ section {
 .about__title {
   margin: 0;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
+    font-size: 36px;
+  }
 }
 
 .about__gallery {
@@ -1606,6 +1740,11 @@ section {
     padding: 60px 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -1647,8 +1786,6 @@ section {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
   min-height: 500px;
   padding: 40px;
   box-sizing: border-box;
@@ -1662,16 +1799,9 @@ section {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    width: 470px;
+    width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 400px;
-    height: 70%;
-  }
-}
-
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -1865,7 +1995,7 @@ section {
 .logo-clients-list {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   color: #afb1b8;
 }
 @media screen and (max-width: 479px) {
@@ -1879,7 +2009,7 @@ section {
 @media screen and (min-width: 480px) {
   .logo-clients-list {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0%;
     width: 100%;
   }

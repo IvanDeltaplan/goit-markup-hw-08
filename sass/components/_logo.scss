@@ -13,8 +13,9 @@
     color: #2196f3;
     
 @media screen and (max-width: 479px) {
-        margin-left: 30px;
+        margin:auto;
         align-items: center;
+        // justify-content: flex-start;
 
     }
     @media screen and (min-width: 480px) {
@@ -44,6 +45,11 @@
     margin-bottom: 20px;
     display: flex;
     color: #2196f3;
+    @media screen and (max-width: 480px) {
+    
+            justify-content: center;
+    
+        }
 @media screen and (min-width: 480px) {
         
         justify-content: center;

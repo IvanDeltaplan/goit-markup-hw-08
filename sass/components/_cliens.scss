@@ -8,7 +8,7 @@
 .logo-clients-list {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     color: #afb1b8;
     @media screen and (max-width: 479px) {
            
@@ -21,7 +21,7 @@
                 @media screen and (min-width: 480px) {
         
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: center;
                     padding: 0%;
                     width: 100%;
         

@@ -16,13 +16,16 @@ margin: auto;
 .about__title {
     margin: 0;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
 
     margin-bottom: 50px;
     color: #212121;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+    }
 }
 
 .about__gallery{
@@ -71,4 +74,8 @@ margin: auto;
         padding: 60px 0;
         
     }
+        @media screen and (min-width: 1200px) {
+            padding: 94px 0;
+    
+        }
 }

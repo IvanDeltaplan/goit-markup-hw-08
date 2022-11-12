@@ -141,6 +141,14 @@
     overflow: hidden;
     background-color: #ffffff;
     
+    @media screen and (max-width: 480px) {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 30px;
+            ;
+    
+    
+        }
     @media screen and (min-width: 480px) {
            width: 450px;
            margin: auto;
