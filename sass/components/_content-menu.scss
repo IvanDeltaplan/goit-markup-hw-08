@@ -1,17 +1,25 @@
 .menu-button {
     // display: inline-block;
+    padding:0 10px;
     margin: 0;
-    padding: 0;
+    
     border: none;
     background-color: transparent;
+
     @media screen and (max-width: 479px) {
-    margin: auto;
+    
+        display: flex;
+            align-items: center;
+            // margin: auto;
+            justify-content: flex-start;
     
         }
     
 @media screen and (min-width: 480px) {
+    display: flex;
         align-items: center;
-        margin: auto;
+        margin: 0;
+        justify-content: flex-start;
         
     }
         

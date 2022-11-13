@@ -3,28 +3,25 @@
 // border-bottom: 1px solid #ececec;
 
 @media screen and (max-width: 479px) {
-        display: flex;
+    display: flex;
+    
         width: 100%;
-        justify-content:center;
         
+    
         height: 60px;
         position: relative;
-        border-bottom: none;
-        margin: auto;
-        // gap: calc(100% - 40px);
         border: none;
     }
 @media screen and (min-width: 480px) {
 display: flex;
-// width: 480px;
- gap: 190px;
+
 width: 100%;
-    justify-content: center;
-margin: auto;
+    justify-content: space-between;
+
 height: 60px;
 position: relative;
 border: none;
-// border-bottom: 0px;
+
 border-bottom: 1px solid #ececec;
     }
     @media screen and (min-width: 768px) {
@@ -32,6 +29,7 @@ border-bottom: 1px solid #ececec;
     width: 100%;
         display: flex;
         align-items: center;
+        
         gap: 40px;
        height: 80px;
        margin-left: 20px;
@@ -125,10 +123,16 @@ border-bottom: 1px solid #ececec;
 
 
 .header-list-img {
+    @media screen and (max-width: 480px) {
+            flex-direction: column;
+            width: 100%;
+           
+        }
     
     @media screen and (min-width: 480px) {
             flex-direction: column;
             width: 100%;
+            
         }
 
                 @media screen and (min-width: 768px) {
@@ -139,6 +143,7 @@ border-bottom: 1px solid #ececec;
                     justify-content: center;
                     width: 100%;
                     margin: 0;
+                    
                     
 
                     
@@ -204,7 +209,7 @@ border-bottom: 1px solid #ececec;
                                                                         color: var(--accent-color);
                                                                         transition: color 300ms linear;
                                                                     
-                                                                        
+                                                                        align-items: center;
                                                                         gap: 20px;
                                                                  }
 }
@@ -378,11 +383,21 @@ margin-top: 120px;
 
 .tel-box {
     display: block;
-
+align-items: center ;
     margin: 0%;
 
 @media screen and (min-width: 480px) {
     margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 30px;;
+
 }
 
 }

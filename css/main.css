@@ -40,7 +40,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   img {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -65,21 +65,16 @@ li {
   .headercontainer {
     display: flex;
     width: 100%;
-    justify-content: center;
     height: 60px;
     position: relative;
-    border-bottom: none;
-    margin: auto;
     border: none;
   }
 }
 @media screen and (min-width: 480px) {
   .headercontainer {
     display: flex;
-    gap: 190px;
     width: 100%;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
     height: 60px;
     position: relative;
     border: none;
@@ -164,6 +159,12 @@ li {
   gap: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .header-list-img {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .header-list-img {
     flex-direction: column;
@@ -236,6 +237,7 @@ li {
     flex-direction: row;
     color: var(--accent-color);
     transition: color 300ms linear;
+    align-items: center;
     gap: 20px;
   }
 }
@@ -347,11 +349,23 @@ li {
 
 .tel-box {
   display: block;
+  align-items: center;
   margin: 0%;
 }
 @media screen and (min-width: 480px) {
   .tel-box {
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tel-box {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tel-box {
+    margin-top: 0;
+    margin-left: 30px;
   }
 }
 
@@ -422,20 +436,24 @@ li {
 }
 
 .menu-button {
+  padding: 0 10px;
   margin: 0;
-  padding: 0;
   border: none;
   background-color: transparent;
 }
 @media screen and (max-width: 479px) {
   .menu-button {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 480px) {
   .menu-button {
+    display: flex;
     align-items: center;
-    margin: auto;
+    margin: 0;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 768px) {
@@ -757,7 +775,6 @@ body {
 }
 
 section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 @media screen and (max-width: 479px) {
@@ -791,6 +808,21 @@ section {
 
 .section-padding-top {
   padding-top: 0;
+}
+@media screen and (max-width: 479px) {
+  .section-padding-top {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-padding-top {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-padding-top {
+    display: block;
+  }
 }
 
 .card-container {
@@ -929,16 +961,12 @@ section {
 }
 @media screen and (max-width: 480px) {
   .card-team {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 30px 15px;
   }
 }
 @media screen and (min-width: 480px) {
   .card-team {
-    width: 450px;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 30px 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1100,12 +1128,12 @@ section {
 @media screen and (max-width: 479px) {
   .logo {
     margin: auto;
-    align-items: center;
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 480px) {
   .logo {
-    margin-left: 30px;
+    margin-left: 10px;
     align-items: center;
   }
 }
@@ -1207,6 +1235,12 @@ section {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 479px) {
+  .advantage__title {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 480px) {
   .advantage__title {
     display: flex;
@@ -1290,19 +1324,19 @@ section {
 @media screen and (max-width: 479px) {
   .advantage__box {
     width: 100%;
-    padding: 0;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 480px) {
   .advantage__box {
     width: 100%;
-    padding: 0;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .advantage__box {
     width: 354px;
-    margin: 0;
+    margin-bottom: 30px;
     padding: 0;
   }
 }
@@ -1429,6 +1463,7 @@ section {
     display: flex;
     gap: 165px;
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1735,17 +1770,6 @@ section {
 .team {
   background-color: #f5f4fa;
 }
-@media screen and (min-width: 768px) {
-  .team {
-    padding: 60px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team {
-    padding: 94px 0;
-  }
-}
-
 .backdrop {
   position: fixed;
   top: 0;
